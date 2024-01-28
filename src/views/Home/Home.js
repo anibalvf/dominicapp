@@ -22,7 +22,13 @@ class Home extends Component {
 
         <h3>PUT/PATCH METHOD </h3>
         <p>You can edit a specific post inside the DetailView by clicking the edit button.</p>
-        <p>I implement the PUT method, that is used for change the entery register, patch its the best option when you want to edit an especific field</p>
+        <p>I implement the PUT method, that is used for change the entery register, patch its the best option when you want to edit an especific field.</p>
+
+        <h1>Extra</h1>
+
+        <h3>REDUX/TYPESCRIPT</h3>
+        <p>I have implemented the Redux structure, but I am not using it at this point because I have never worked with it. However, I understand how to manage the state with it and how it works.</p>
+        <p>Same thing about TypeScript, I have knowledge of it, and it is quite simple to use, but I have not worked with it yet.</p>
       </div>
     );
   }

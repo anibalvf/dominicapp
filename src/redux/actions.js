@@ -1,0 +1,1 @@
+export const AFV_TEXT = 'Anibal Vallejo Franco';

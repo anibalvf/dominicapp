@@ -44,7 +44,7 @@ class GetView extends Component {
       rowModesModel: {},
       title: '',
       body: '',
-
+      msgAlert: '',
       manageModal: false,
       columns: [
         {
@@ -161,6 +161,7 @@ class GetView extends Component {
     } catch (error) {
       console.error('Error:', error);
     }
+    this.setState({msgAlert:'Post Created Successful!'}) 
     this.setState({ alertVisibility: true })
     this.handleOpenCloseModal()
   };
@@ -177,7 +178,9 @@ class GetView extends Component {
       .then(response => {
         if (!response.ok) {
           throw new Error("Network response was not ok");
+        
         }
+        this.setState({msgAlert:'Post Deleted Successful!'}) 
         this.setState({ alertVisibility: true })
         console.log("Delete successful");
         this.setState((prevState) => ({
@@ -207,7 +210,7 @@ class GetView extends Component {
           }}
         > 
           <Alert severity="success" variant="standard" className="alert">
-            <AlertTitle>Delete Success !</AlertTitle>
+            <AlertTitle>{this.state.msgAlert}</AlertTitle>
           </Alert>
         </Fade>
         <div style={{ width: '100%' }}>
